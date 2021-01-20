@@ -1,0 +1,597 @@
+@font-face{
+    font-family: 'fontTitle';
+    src:local('fontTitle') ,
+    url(../font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: 'fontAbel';
+    src:local('fontAbel') ,
+    url(../font/Abel-Regular.ttf);
+}
+
+
+body{
+    margin:0px;
+    padding: 0px;
+    font-size:13px;
+    font-family: "Yu Gothic", YuGothic, "Hiragino Sans", Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
+}
+.btn{
+    border: 1px solid rgb(165, 165, 165);
+    background-color: rgb(255, 255, 255);
+    color: rgb(66, 66, 66);
+    padding: 20px 50px;
+    border-bottom: solid 4px rgb(165, 165, 165);
+    text-decoration: none;
+}
+.btn:hover{
+    color:rgb(224, 127, 0);
+    transition: all 0.4s; /*アニメーションの時間を指定*/
+}
+.btn:active{
+    border: 1px solid rgb(165, 165, 165); 
+    background-color: rgba(165, 165, 165,0.2);
+}
+
+.bd-break{
+    width: 250px;
+    height: 0px;
+    margin: auto;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+.bd-break1{
+    width: 100%;
+    height:50px;
+    background-color: rgba(255, 145, 0, 0.1);
+}
+
+h1{
+    color:rgba(66,66,66,1.0);
+    font-family: 'fontTitle','Lato','Noto Sans','Hiragino Kaku Gothic Pro',"Montserrat","游ゴシック";
+    font-size:30px;
+    font-weight:normal;
+}
+.txt-red{
+    color:red;
+}
+.color-orange{
+    color:rgb(227, 99, 2);
+}
+
+
+header{
+    position: relative;
+    height:350px;
+}
+.h-title{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    margin: auto;
+    height:69px;
+}
+.h-title-h1{
+    font-size:30px;
+    font-family: fontAbel,"Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    color:white;
+    margin-top:0px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-shadow: 0px 0px 9px rgb(255, 255, 255);
+}
+.h-title-p1{
+    font-size:15px;
+    font-family: fontAbel,"Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    color:white;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-shadow: 0px 0px 9px rgb(255, 255, 255);
+}
+
+.h-set{
+    position: relative;
+    min-width: 1000px;
+    background-image: url("../img/malieu9-header-2.jpg");
+    background-position: center top; 
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;   
+    height:250px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .bg-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.bg-black .h-title{
+    text-align:center;
+    z-index: 100;
+}
+
+.h-nav{
+    position: fixed;
+    top:0px;
+    left:0px;
+    margin:0px;
+    height:65px;
+    width: 100%;
+    z-index: 100; /*ナビが画像の下に行く為*/
+}
+.h-nav ul{
+    float: right;
+    padding-right: 20px;
+}
+.h-nav li{
+    display: inline-block;
+    font-size:14px;
+}
+.h-nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding:10px 10px;
+}
+.h-nav img{
+    width: 75px;
+    height: 50px;
+    margin:-3px 20px;
+}
+.h-nav-l a:hover{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+
+.main{
+    margin: auto;
+    width:1000px;
+
+}
+
+
+.success{
+    padding-top:50px;
+    height:3750px;
+}
+.s-message{
+    text-align: center;
+    font-size:26px;
+}
+
+.s-list{
+    padding-top:50px;
+    padding-bottom:100px;
+}
+.s-text1{
+    max-width: 500px;
+    width:45%;
+    float:left;
+    padding-top:30px;
+    background-image: url(../img/cake01.png);
+    background-repeat: no-repeat;
+    background-position: left bottom; 
+    height: 500px;
+}
+.s-sec{
+    font-family:  "Noto Sans Japanese", sans-serif;
+    padding:0px 40px;
+    margin-top:130px;
+    letter-spacing: 0.15em;
+    line-height: 2;
+    font-size:14px;
+}
+.s-sec1-p1{
+    font-weight: bold;
+    border-bottom: 1px solid rgb(66, 66, 66);
+}
+
+
+.s-imgflame{
+    width:55%;
+    float:right;
+    text-align: right;
+}
+.s-img1{
+    width: 500px;
+    height:500px;
+    padding-top:50px;
+}
+
+.s-text2{
+    max-width: 500px;
+    width:45%;
+    float:right;
+    background-image: url(../img/cake02.png);
+    background-repeat: no-repeat;
+    background-position: right bottom; 
+    height: 500px;
+
+}
+.s-imgflame2{
+    width:55%;
+    float:left;
+    text-align: left;
+}
+
+
+.access{
+    height:600px;
+    padding-top:50px;
+    background-color: white;
+}
+.a-title{
+    text-align: center;
+    padding:20px 20px 30px 20px;
+}
+.a-text{
+    padding-top:60px;
+    max-width: 500px;
+    width:50%;
+    float:left;
+}
+.a-text p{
+    padding-left: 150px;
+}
+.a-p0{
+    padding-bottom:10px;
+    font-weight: bold;
+}
+.a-p1{
+    font-weight: bold;
+    padding-top:5px;
+}
+
+.a-p2{
+    padding-top:10px;
+}
+
+.a-tizu{
+    width:50%;
+    float:right;
+}
+.a-tizu1{
+    width: 400px;
+    height:400px;
+    padding-top:50px;
+    padding-left:50px;
+
+}
+
+
+
+
+
+
+.slider{
+    margin: 0px auto;
+    padding: 10px;
+    height: 200px;
+    width: 850px;
+}
+.slider li{
+    margin:initial;
+    text-decoration: none;
+    display: inline-block;
+}
+.slider img{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    cursor : pointer;
+}
+/*slick setting*/
+.photolist-h1{
+    font-size: 28px;
+    padding:10px;
+    text-align: center;
+}
+.slick-container{
+    padding-bottom:100px;
+}
+
+
+
+
+
+.footer{
+    text-align:center;
+    font-size:13px;
+    background-color:rgba(0,0,0,0.8);
+    color: #ffffff;
+    padding: 16px 0;
+    line-height: 2;
+    min-width: 1000px;
+}
+.footer-under{
+    font-size:12px;
+}
+.footer a{
+    text-decoration:none;
+    color: #ffffff;
+}
+.footer a:hover{
+    color: rgb(0, 195, 255);
+}
+
+
+.clear{
+    /* floatを解除 */
+    clear: both;
+  }
+
+
+
+    /* 写真スライドショーの画像クリック表示・非表示 */
+  #graydisplay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%!important;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+  }
+  #graydisplay img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+  }
+
+
+  .slider img{
+    width: 90%;
+    height: 90%;
+}
+
+
+@media screen and (max-width:1000px){
+    .h-set{
+        background-size:100%;
+        background-image: url("../img/malieu9.jpg");
+    }
+}
+/* レスポンシブ:725px */
+@media screen and (max-width:725px){
+
+    .main{
+        width:auto;
+    }
+    .h-set{
+        min-width:initial;
+    }
+    .footer{
+        min-width: initial;
+    }
+
+
+    .success{
+        padding-top:50px;
+        height:5050px;
+    }
+
+    
+    .s-list{
+        padding-top:50px;
+        padding-bottom:30px;
+    }
+    .s-text1{
+        float: none;
+        clear: both;
+        max-width: initial;
+        width:90%;
+        height: initial;
+        margin:0 auto;
+        background-size:auto 100%;
+    }
+    .s-sec{
+        margin-top:50px;
+        height:auto;
+    }
+
+    
+    .s-imgflame{
+        width:100%;
+        float:none;
+        clear: both;
+        text-align: center;
+    }
+    .s-img1{
+        width: 90%;
+        height:auto;
+        padding-top:50px;
+    }
+    
+    .s-text2{
+        float: none;
+        clear: both;
+        max-width: initial;
+        width:90%;
+        margin:0 auto;
+        height:initial;
+        background-size:auto 100%;
+    }
+    .s-imgflame2{
+        width:100%;
+        float:none;
+        clear: both;
+        text-align: center;
+    }
+
+    .access{
+        height:1050px;
+    }
+    .a-text{
+        float:none;
+        clear: both;
+        padding-top:60px;
+        max-width: initial;
+        width:90%;
+        margin:auto;
+    }
+    .a-text p{
+        padding:initial;
+    }
+    .a-tizu{
+        float:none;
+        clear: both;
+        width:90%;
+        margin:auto;
+    }
+    .a-tizu1{
+        width: 100%;
+        height:400px;
+        padding-top:50px;
+        padding-left:initial;
+    }
+    
+    
+    
+
+    .slider{
+        margin: 0px auto;
+        padding: 10px;
+        width: 95%;
+        height: auto;
+    }
+    .slider li{
+        margin:initial;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .slider img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+
+    .h-nav ul{
+        display: none;
+    }
+
+    /*【 ハンバーガーメニュー 】トグルボタンのスタイルを指定*/
+    .Toggle {
+        display: block;
+        position: fixed;    /* bodyに対しての絶対位置指定 */
+        right: 25px;
+        top: 12px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 101; /*h-navが100な為その上に表示*/
+    }
+    
+    .Toggle span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px white;
+        -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+        -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+        transition: .35s ease-in-out;			/*変化の速度を指定*/
+        left: 6px;
+    }
+    
+    .Toggle span:nth-child(1) {
+        top: 9px;
+    }
+    
+    .Toggle span:nth-child(2) {
+        top: 18px;
+    }
+    
+    .Toggle span:nth-child(3) {
+        top: 27px;
+    }
+
+
+}
+
+@media screen and (min-width:725px){
+    /*ハンバーガーメニュー 画面広げたらhbのメニュー部分非表示*/
+    nav.NavMenu{
+        display: none;
+    }
+}
+
+
+/*ハンバーガーメニュー*/
+/*ナビメニューのスタイルを指定*/
+nav.NavMenu{
+    position: fixed; /*表示位置を固定*/
+    z-index:   101; /*重ね順を変更*/
+    top: 80px; /*表示位置を指定*/
+    left: 0; /*表示位置を指定*/
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%; /*全幅表示*/
+    height: 400px;
+    transform: translateY(-200%); /*ナビを上に隠す*/
+    transition: all 0.3s; /*アニメーションの時間を指定*/
+}
+    
+nav.NavMenu ul{
+    width: 100%;
+    list-style: none;
+}
+    
+.NavMenu .hb-nav-l{
+    width:50%;
+    height:50px;
+}
+
+.NavMenu .hb-nav-l a{
+    font-size: 13px;
+    color:white;
+    width: 100%;
+    height: 100%;
+    padding:0 20px;
+    line-height: 50px;
+    display: block; /*クリックできる領域を広げる*/
+    text-decoration: none;
+}
+.NavMenu .hb-nav-l a:hover{
+    background-color: rgba(0, 195, 255, 0.4)
+}
+
+
+/*トグルボタンが押されたときに付与するクラス*/
+nav.NavMenu.active{
+    transform: translateY(0%);
+}
+
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+

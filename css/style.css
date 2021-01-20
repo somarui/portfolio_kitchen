@@ -1,0 +1,764 @@
+@font-face{
+    font-family: 'fontTitle';
+    src:local('fontTitle') ,
+    url(../font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: 'fontAbel';
+    src:local('fontAbel') ,
+    url(../font/Abel-Regular.ttf);
+
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+    font-size:13px;
+    background-color:rgb(249,249,249);
+    font-family: "Yu Gothic", YuGothic, "Hiragino Sans", Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
+}
+.btn{
+    border: 1px solid rgb(165, 165, 165);
+    background-color: rgb(250, 250, 250);
+    color: rgb(66, 66, 66);
+    padding: 20px 50px;
+    border-bottom: solid 4px rgb(165, 165, 165);
+    text-decoration: none;
+}
+.btn:hover{
+    color: rgb(99, 99, 99);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s; /*アニメーションの時間を指定*/
+}
+.btn:active{
+    border: 1px solid rgb(165, 165, 165); 
+    background-color: rgba(165, 165, 165,0.2);
+}
+
+.bd-break{
+    width: 250px;
+    height: 0px;
+    margin: auto;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+h1{
+    color:rgba(66,66,66,1.0);
+    font-family: 'fontTitle','Lato','Noto Sans','Hiragino Kaku Gothic Pro',"Montserrat","游ゴシック";
+    font-size:30px;
+    font-weight:normal;
+}
+.txt-red{
+    color:red;
+}
+
+header{
+    position: relative;
+    height:1050px;
+}
+.h-set{
+    position: relative;
+    min-width: 1000px;
+    background-position: center top; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;   
+    height:1050px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .bg-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.main{
+    margin: auto;
+    width:1000px;
+
+}
+
+.h-nav{
+    position: fixed;
+    top:0px;
+    left:0px;
+    margin:0px;
+    height:65px;
+    width: 100%;
+    z-index: 1000;
+}
+.h-nav ul{
+    float: right;
+    padding-right: 20px;
+}
+.h-nav li{
+    display: inline-block;
+    font-size:14px;
+}
+.h-nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding:10px 10px;
+}
+.h-nav img{
+    width: 70px;
+    height: 50px;
+    margin:-3px 20px;
+    display: none;
+}
+.h-nav-l a:hover{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.h-title{
+    position: absolute;
+    top: 450px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+}
+.h-title img{
+    width:600px;
+    height:55px;
+    padding-top:20px;
+}
+.h-title2{
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 4;
+}
+.h-title2 img{
+    width:300px;
+    height:205px;
+    /* filter: drop-shadow(0px 0px 150px rgb(255, 255, 255)); */
+}
+.h-bottom-black{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 5;
+}
+.h-bottom-left{
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+.h-bottom-right{
+    float: right;
+    text-align: center;
+    width: 50%;
+    padding-top:110px;
+}
+.h-bottom-t1{
+    color:rgba(255,255,255,1.0);
+    font-family: 'fontTitle','Lato','Noto Sans','Hiragino Kaku Gothic Pro',"Montserrat","游ゴシック";
+    font-size:30px;
+    letter-spacing: 0.3em;
+    font-weight:normal;
+    padding-top:100px;
+}
+
+
+.h-bottom-right li{
+    display: inline-block;
+    padding:0px 10px;
+    height: 100px;
+}
+
+.h-bottom-yazirushi{
+    display: inlineblock;
+    width: 50px;/*画像の幅*/
+    height: 50px;/*画像の高さ*/
+}
+.h-bottom-btn1{
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255,0.1);
+    color: rgba(255, 255, 255,1);
+    font-size:20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-bottom: solid 4px rgb(165, 165, 165);
+    text-decoration: none;
+}
+
+
+
+
+.concept{
+    height:1050px;
+    background: url(../img/bg_sankaku_concept1.png);
+    background-repeat: no-repeat;
+}
+.c-message{
+    color:rgba(33, 33, 33, 1.0);
+    font-family: "Noto Sans JP";
+    padding: 2em;
+    text-align:center;
+    font-size:36px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.c-title{
+    padding:50px;
+}
+.c-img{
+    width:65%;
+    float:left;
+}
+.c-img1{
+    width: 600px;
+    height:auto;
+    padding-top:50px;
+}
+.c-text{
+    max-width: 500px;
+    width:35%;
+    float:right;
+    text-align: center;
+    padding-top:50px;
+}
+.c-sec{
+    padding-top:75px;
+    line-height: 2.5;
+    letter-spacing: 0.1em;
+}
+.c-btn{
+    margin:50px;
+    text-align: center;
+}
+
+
+.success{
+    padding-top:50px;
+    height:950px;
+    background: url(../img/bg_sankaku_success.png);
+    background-repeat: no-repeat;
+
+}
+
+.s-message{
+    padding-top:20px;
+    padding-bottom:80px;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size:28px;
+    line-height: 48px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.s-title{
+    padding: 50px;
+}
+.s-text{
+    max-width: 500px;
+    width:35%;
+    float:left;
+    text-align: center;
+}
+.s-sec{
+    padding-top:50px;
+    line-height: 2.5;
+    letter-spacing: 0.1em;
+
+}
+.s-img{
+    width:65%;
+    float:right;
+    text-align: right;
+}
+.s-img1{
+    width: 500px;
+    height:auto;
+    padding-top:50px;
+}
+
+.s-btn{
+    margin:50px;
+    text-align: center;
+}
+
+.floor{
+    height:900px;
+    background: url(../img/bg_sankaku_floor1.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.f-title{
+    padding:50px;
+}
+.f-imgList{
+    padding-top:30px;
+}
+.f-imgRow{
+    text-align: center;
+    margin-bottom:40px;
+}
+.f-imgLeft{
+    width:325px;
+    height:250px;
+    margin: 0 20px;
+
+}
+.f-imgRight{
+    width:325px;
+    height:250px;  
+    margin: 0 20px;
+}
+.f-btn{
+    margin:50px;
+}
+
+
+.price{
+    height:650px;
+    background: url(../img/bg_sankaku_price1.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.p-title{
+    padding:50px;
+    margin-top:0px;
+}
+.p-sec{
+    padding:50px 50px 125px 50px;
+}
+
+
+.access{
+    height:700px;
+    background: url(../img/bg_sankaku_access1.png);
+    background-repeat: no-repeat;
+
+    padding-top:100px;
+}
+.a-title{
+    text-align: center;
+    padding:0px 20px 30px 20px;
+}
+.a-text{
+    max-width: 500px;
+    width:50%;
+    float:left;
+}
+.a-text p{
+    padding-left: 150px;
+}
+.a-p0{
+    padding-bottom:10px;
+    font-weight: bold;
+}
+.a-p2{
+    padding-top:10px;
+}
+
+.a-tizu{
+    width:50%;
+    float:right;
+}
+.a-tizu1{
+    width: 100%;
+    height:800px;
+    padding-top:50px;
+}
+.a-btn{
+    margin:50px;
+    text-align: center;
+}
+
+
+.contact{
+    padding-top:50px;
+    height: 1350px;
+    background: url(../img/bg_sankaku_contact1.png);
+    background-repeat: no-repeat;
+
+}
+.contact h1{
+    text-align: center;
+}
+.con-btn{
+    margin:100px;
+    text-align: center;
+}
+.con-btn p{
+    line-height: 4em;
+}
+.con-form{
+    padding-top:150px;
+}
+.con-link{
+    text-align: center;
+}
+.con-link-txt1{
+    text-decoration: none;
+    color:rgb(255, 0, 0);
+}
+
+
+.footer{
+    text-align:center;
+    font-size:13px;
+    background-color:rgba(0,0,0,0.8);
+    color: #ffffff;
+    padding: 16px 0;
+    line-height: 2;
+    min-width: 1000px;
+}
+.footer-under{
+    font-size:12px;
+}
+.footer a{
+    text-decoration:none;
+    color: #ffffff;
+}
+.footer a:hover{
+    color: rgba(0, 195, 255);
+}
+
+
+/* スクロールでふわっとフェードイン */
+.c-fadein,.s-fadein,.f-fadein,.p-fadein,.a-fadein,.con-fadein {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
+  }
+
+
+
+.clear{
+    /* floatを解除 */
+    clear: both;
+  }
+
+
+
+/* レスポンシブ:725px */
+@media screen and (max-width:725px){
+
+    .main{
+        width:auto;
+    }
+    .h-set{
+        min-width:initial;
+    }
+    .h-title img{
+        width:320px;
+        height:40px;
+        padding-top:20px;
+    }
+    
+    .h-bottom-left{
+        float: none;
+        clear: both;
+        width: 100%;
+    }
+    .h-bottom-right{
+        float: none;
+        clear: both;
+        width: 100%;
+        padding-top:initial;
+    }
+    .h-bottom-t1{
+        font-size:24px;
+    }
+
+    .footer{
+        min-width: initial;
+    }
+    .concept{
+        height:1250px;        
+    }
+    .c-title{
+        display: none;
+    }
+    .c-img{
+        clear:both;
+        width:100%;
+    }
+    .c-img1{
+        width: 100%;
+        padding-top:0px;
+    }
+    .c-sec{
+        clear: both;
+        margin:0 auto;
+    }
+    .c-text{
+        float: none;
+        clear: both;
+        max-width: initial;
+        width: 90%;
+        margin: auto;
+    }
+
+
+    .success{
+        height:1250px;
+        background-color:white;
+    }
+    .s-title{
+        padding: 50px;
+    }
+    .s-text{
+        float: none;
+        clear: both;
+        max-width: initial;
+        width:100%;
+    }
+    .s-sec{
+        padding-top:initial;
+        width: 90%;
+        margin: auto;
+    }
+    .s-img{
+        float: none;
+        clear: both;
+        max-width: initial;
+        width:90%;
+        margin: auto;
+    }
+    .s-img1{
+        width: 100%;
+        padding-top:50px;
+    }
+    
+        .s-btn{
+        margin:50px;
+        text-align: center;
+    }
+
+
+    .floor{
+        height:1700px;
+        text-align: center;
+    }
+    .f-title{
+        padding:30px;
+    }
+    .f-imgList{
+       max-width: 600px;
+       width: 100%;
+       padding-bottom: 20px;
+       margin: auto;
+    }
+    .f-imgRow{
+        width: 70%;
+        margin: auto;
+        }
+    .f-imgLeft{
+        width:100%;
+        height:100%;
+        margin: 0;
+        padding-bottom: 15px;
+
+    }
+    .f-imgRight{
+        width:100%;
+        height:100%;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .price{
+        background-color:white;
+    }
+
+    .access{
+        height:1000px;
+        padding-top:0px;
+
+    }
+    .a-text{
+        clear: both;
+        margin: auto;
+        width: 100%;
+        max-width: initial;
+    }
+    .a-sec{
+        width: 230px;
+        padding-top:20px;
+        margin: auto;
+    }
+    .a-text p{
+        padding: 0;
+    }
+    .a-p1{
+        text-align: center;
+    }
+    
+    .a-tizu{
+        margin: auto;
+        width: 100%;
+        height:400px;
+        text-align: center;
+    }
+    .a-tizu1{
+        padding-top:50px;
+        width: 100%;
+        height: 100%;
+    }
+    .a-btn{
+        margin:50px;
+        text-align: center;
+    }
+    
+    .contact{
+        background-color: white;
+    }
+    .con-btn{
+        margin:100px auto;
+        text-align: center;
+    }
+        
+
+    .h-nav ul{
+        display: none;
+    }
+
+    /*【 ハンバーガーメニュー 】トグルボタンのスタイルを指定*/
+    .Toggle {
+        display: block;
+        position: fixed;    /* bodyに対しての絶対位置指定 */
+        right: 25px;
+        top: 12px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .Toggle span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px white;
+        -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+        -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+        transition: .35s ease-in-out;			/*変化の速度を指定*/
+        left: 6px;
+    }
+    
+    .Toggle span:nth-child(1) {
+        top: 9px;
+    }
+    
+    .Toggle span:nth-child(2) {
+        top: 18px;
+    }
+    
+    .Toggle span:nth-child(3) {
+        top: 27px;
+    }
+
+
+    /*レスポンシブ　改行ありなし*/
+    .br-sp{
+        display: block;
+    }
+}
+@media screen and (min-width:725px){
+    /*ハンバーガーメニュー 画面広げたらhbのメニュー部分非表示*/
+    nav.NavMenu{
+        display: none;
+    }
+    /*レスポンシブ　改行ありなし*/
+    .br-sp{
+        display: none;
+    }
+}
+/*全体幅修正*/
+@media screen and (max-width:375px){
+    .success{
+        height: 1200px;
+    }
+    .floor{
+        height:1200px;
+    }
+
+}
+/*全体幅修正*/
+@media screen and (max-width:331px){
+    body{
+        width: 331px;
+    }
+}
+
+
+/*ハンバーガーメニュー*/
+/*ナビメニューのスタイルを指定*/
+nav.NavMenu{
+    position: fixed; /*表示位置を固定*/
+    z-index: 101; /*重ね順を変更*/
+    top: 80px; /*表示位置を指定*/
+    left: 0; /*表示位置を指定*/
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%; /*全幅表示*/
+    height: 400px;
+    transform: translateY(-200%); /*ナビを上に隠す*/
+    transition: all 0.3s; /*アニメーションの時間を指定*/
+}
+    
+nav.NavMenu ul{
+    width: 100%;
+    list-style: none;
+}
+    
+.NavMenu .hb-nav-l{
+    width:50%;
+    height:50px;
+}
+
+.NavMenu .hb-nav-l a{
+    font-size: 13px;
+    color:white;
+    width: 100%;
+    height: 100%;
+    padding:0 20px;
+    line-height: 50px;
+    display: block; /*クリックできる領域を広げる*/
+    text-decoration: none;
+}
+.NavMenu .hb-nav-l a:hover{
+    background-color: rgba(0, 195, 255, 0.4)
+}
+
+
+/*トグルボタンが押されたときに付与するクラス*/
+nav.NavMenu.active{
+    transform: translateY(0%);
+}
+
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+

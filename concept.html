@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ShareKitchenBands |【簡単に料理を出店できる】滋賀のシェアキッチン |コンセプト</title>
+   <link rel="shortcut icon" type="image/x-icon" href="img/favicon1-1.png" alt="シェアキッチン 滋賀 出店 料理 バンズ">
+   <link rel="stylesheet" href="css/concept.css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet"> <!--h1フォント読み込み-->
+   <script src="https://sdk.form.run/js/v2/embed.js"></script>
+   <!-- jQueryのライブラリの読み込み -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>
+   <div class="container">
+
+    <header class="header">
+        <div class="h-title">
+            <h1 class="h-title-h1">CONCEPT</h1>
+        </div>
+         <div class="h-set">
+            <div class="bg-black">
+                <div class="h-nav" id="h-nav">
+                  <a href="index.html"><img src="img/logo1.png" id="h-navLogo" alt="シェアキッチン 滋賀 出店 料理 バンズ"></a>
+                  <ul>
+                     <li class="h-nav-l"><a href="concept.html">Concept</a></li>
+                     <li class="h-nav-l"><a href="success.html">Success</a></li>
+                     <li class="h-nav-l"><a href="floor.html">Floor</a></li>
+                     <li class="h-nav-l"><a href="price.html">Price</a></li>
+                     <li class="h-nav-l"><a href="access.html">Access</a></li>
+                     <li class="h-nav-l"><a href="contact.html">Contact</a></li>             
+                  </ul>
+                </div>
+            </div> 
+         </div>        
+
+         <!-- ハンバーガーメニュー -->
+         <!-- ナビ部分 -->
+         <nav class="NavMenu">
+            　<ul>
+                <li class="hb-nav-l"><a href="concept.html">Concept　~コンセプト~</a></li>
+                <li class="hb-nav-l"><a href="success.html">Success　出店事例</a></li>
+                <li class="hb-nav-l"><a href="floor.html">Floor　フロア紹介</a></li>
+                <li class="hb-nav-l"><a href="price.html">Price　料金一覧</a></li>
+                <li class="hb-nav-l"><a href="access.html">Access　アクセス</a></li>
+                <li class="hb-nav-l"><a href="contact.html">Contact　お問い合わせ</a></li>             
+             　</ul>
+         </nav>
+         <!-- ハンバーガー部分 --> 
+            <div class="Toggle">
+            　　<span></span>
+            　　<span></span>
+            　　<span></span>
+            </div>
+    </header>
+
+
+
+
+    <div class="main">
+        <div class="concept" id="concept">
+                <h1 class="c-message">誰でも自作料理が創れ、自店を開店する前に手軽にお試しできるシェアキッチン</h1>
+        <div class="c-list">
+            <div class="c-set">
+                <div class="c-imgflame">
+                    <img src="img/k-1.jpg" alt="シェアキッチン 滋賀 出店 料理 バンズ" class="c-img">
+                </div>
+                <div class="c-text">
+                    <h1 class="c-title">料理やお菓子創作に適したキッチン設備</h1>
+                    <section class="c-sec">
+                    <p>レンタルスペースとしても時間単位・日単位・定期曜日の長期レンタル(昼と夜コース別途応相談)も可能です。本格的な飲食店営業や菓子製造のシェアキッチン利用が出来る設備が整っています。</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="c-list">
+            <div class="c-set">
+                <div class="c-imgflame2">
+                    <img src="img/c-5.jpg" alt="シェアキッチン 滋賀 出店 料理 バンズ" class="c-img">
+                </div>
+                <div class="c-text2">
+                    <h1 class="c-title">料理教室やミニライブイベントとしても利用可能</h1>
+                    <section class="c-sec2">
+                    <p>座席26名から、立食なら約５０名までのパーティや各種集会に利用できます。設備的には、ゆとりのあるトイレ空間(女子トイレには二つの洗面台が備わり、広々とした高級化粧室です。バリアフリーの店舗でゆったりとくつろげるスペースになっています。会議や宴会やパーティに最適な空間です。夜１０時までなら、ミニライブイベントでも利用可能です。</p>
+                    <p>シェアキッチンバンズは誰でも気軽に料理を始められる<br>「<span class="txt-red">シェアキッチン</span>」を目指しております。</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
+
+
+        </div>
+    </div>
+
+         
+      <footer class="footer">
+         <div class="fo-title">
+            Copyright&copy; <a href="#">ShareKitchenBands</a> All Rights Reserved.
+         </div>
+      </footer>
+   
+      
+   </div>
+
+   </div>
+</body>
+
+
+
+
+<script>
+   function changeColor() {
+var timing = 0; //　変化するタイミングを微調整する
+
+var scrollY = window.pageYOffset;
+var body = document.body;
+
+var trigger1 = document.getElementById('concept');　//IDがcontact→変数trigger1
+var trigger2 = document.getElementById('h-nav');　//IDがhb-navform→変数trigger2
+
+
+var trigger1Y = trigger1.getBoundingClientRect().top; // ウィンドウ上からの要素の位置
+
+
+// contactの位置がスクロールで0以下になった時、trigger2の背景オレンジ
+// contactの位置がスクロールで0以上の時、trigger2の背景ブラック
+if(trigger1Y - timing < 110) {
+ trigger2.style.backgroundColor = "rgba(0,0,0,0.8)";
+ trigger2.style.shadowColor = 'gray'; 
+ trigger2.style.shadowOffsetX = 5;
+ trigger2.style.shadowOffsetY = 5;
+ 
+} else if(trigger1Y - timing > 0){
+ trigger2.style.backgroundColor = 'transparent';
+
+}
+}
+
+window.addEventListener('scroll', changeColor);
+</script>
+
+
+
+<script type="text/javascript"> //ハンバーガーメニュー
+$(function() {
+　$('.Toggle').click(function() {
+　　$(this).toggleClass('active');
+
+　if ($(this).hasClass('active')) {
+　　$('.NavMenu').addClass('active');　 //トグルボタンが押された時クラスを付与
+　} else {
+　　$('.NavMenu').removeClass('active'); //クラスを外す
+　}
+　});
+});
+</script>
+
+</html>
+

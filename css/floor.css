@@ -1,0 +1,627 @@
+@font-face{
+    font-family: 'fontTitle';
+    src:local('fontTitle') ,
+    url(../font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: 'fontAbel';
+    src:local('fontAbel') ,
+    url(../font/Abel-Regular.ttf);
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+    font-size:13px;
+    font-family: "Yu Gothic", YuGothic, "Hiragino Sans", Meiryo, "Hiragino Kaku Gothic ProN", sans-serif;
+}
+.btn{
+    border: 1px solid rgb(165, 165, 165);
+    background-color: rgb(250, 250, 250);
+    color: rgb(66, 66, 66);
+    padding: 20px 50px;
+    border-bottom: solid 4px rgb(165, 165, 165);
+    text-decoration: none;
+}
+.btn:hover{
+    color: rgb(99, 99, 99);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s; /*アニメーションの時間を指定*/
+}
+.btn:active{
+    border: 1px solid rgb(165, 165, 165); 
+    background-color: rgba(165, 165, 165,0.2);
+}
+
+.bd-break{
+    width: 250px;
+    height: 0px;
+    margin: auto;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+h1{
+    color:rgba(66,66,66,1.0);
+    font-family: 'fontTitle','Lato','Noto Sans','Hiragino Kaku Gothic Pro',"Montserrat","游ゴシック";
+    font-size:30px;
+    font-weight:normal;
+}
+.txt-red{
+    color:red;
+}
+
+header{
+    position: relative;
+    height:250px;
+}
+.h-title{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    margin: auto;
+    height:69px;
+}
+.h-title-h1{
+    font-size:30px;
+    font-family: fontAbel,"Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    color:white;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-shadow: 0px 0px 9px rgb(255, 255, 255);
+}
+
+.h-set{
+    position: relative;
+    min-width: 1000px;
+    background-image: url("../img/header3.jpg");
+    background-position: center top; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;   
+    height:250px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header .bg-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.bg-black .h-title{
+    text-align:center;
+    z-index: 100;
+}
+
+.h-nav{
+    position: fixed;
+    top:0px;
+    left:0px;
+    margin:0px;
+    height:65px;
+    width: 100%;
+    z-index: 100; /*ナビが画像の下に行く為*/
+}
+.h-nav ul{
+    float: right;
+    padding-right: 20px;
+}
+.h-nav li{
+    display: inline-block;
+    font-size:14px;
+}
+.h-nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding:10px 10px;
+}
+.h-nav img{
+    width: 75px;
+    height: 50px;
+    margin:-3px 20px;
+}
+.h-nav-l a:hover{
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+
+.main{
+    margin: auto;
+    width:1000px;
+
+}
+
+
+
+
+.floor{
+    height:2300px;
+    text-align: center;
+    background-image:url(../img/door01.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.f-imglist{
+    padding-top:100px;
+}
+.f-img-title{
+    display: inline-block;
+    font-size: 15px;
+    color:rgb(66, 66, 66);
+    border-bottom: 1px solid rgb(66, 66, 66);
+}
+
+.f-imgflame{
+    overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+    width:100%;
+    height:100%;
+    transition-duration: 1.0s;	/*変化に掛かる時間*/
+    display: inline-block;
+}
+.f-img{
+    width: 100%;
+    height: 100%;
+}
+.f-imglist ul{
+    padding-left:initial;
+    margin:auto;
+    width:1000px;
+}
+.f-imglist li{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width:200px;
+    height:200px;  
+    margin:25px 25px;
+}
+.f-imginner{
+    position: absolute;
+    transition-duration: 1.0s;	/*変化に掛かる時間*/
+    top:10px;
+    left: 10px;
+    z-index: 10;
+    width: 90%;
+    height: 90%;
+}
+.f-imginner p{
+    display: none;
+    color:white;
+    text-align: center;
+    line-height: 180px;
+    font-size:20px;
+    text-shadow:0px 0px 6px rgba(255,255,205,1.0);
+    letter-spacing: 0.1em;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+
+/*画像上黒透明画面 表示*/
+.f-imglist-li1:hover .f-imginner{
+    background-color: rgba(0, 0, 0, 0.6);
+}.f-imglist-li2:hover .f-imginner{
+    background-color: rgba(0, 0, 0, 0.6);
+}.f-imglist-li3:hover .f-imginner{
+    background-color: rgba(0, 0, 0, 0.6);
+}/*画像上黒透明画面内テキスト 表示*/
+.f-imglist-li1:hover .f-imginner p{
+    display: inline;
+}.f-imglist-li2:hover .f-imginner p{
+    display: inline;
+}.f-imglist-li3:hover .f-imginner p{
+    display: inline;
+}
+
+.f-imglist-li1:hover  .f-img{
+	transform: scale(1.01);	/*画像の拡大率*/
+	transition-duration: 0.5s;	/*変化に掛かる時間*/
+}.f-imglist-li2:hover  .f-img{
+	transform: scale(1.01);	/*画像の拡大率*/
+	transition-duration: 0.5s;	/*変化に掛かる時間*/
+}.f-imglist-li3:hover  .f-img{
+	transform: scale(1.01);	/*画像の拡大率*/
+	transition-duration: 0.5s;	/*変化に掛かる時間*/
+}
+
+
+
+.f-floorplan{
+    padding:50px 0px;
+    text-align: center;
+    margin: auto;
+}
+.f-imgFloorplan{
+    width: 60%;
+    height: 60%;
+}
+.f-text{
+    width:600px;
+    text-align: left;
+    margin: auto;
+}
+.f-p1{
+    display: inline-block;
+    border-bottom:1px solid rgb(66, 66, 66);
+}
+.f-p2{
+    color:rgb(99, 99, 99);
+}
+.f-p3-1{
+    display: inline-block;
+    border-bottom:1px solid rgb(66, 66, 66);
+    margin:13px 0px;
+}
+
+
+
+
+.footer{
+    text-align:center;
+    font-size:13px;
+    background-color:rgba(0,0,0,0.8);
+    color: #ffffff;
+    padding: 16px 0;
+    line-height: 2;
+    min-width: 1000px;
+}
+.footer-under{
+    font-size:12px;
+}
+.footer a{
+    text-decoration:none;
+    color: #ffffff;
+}
+.footer a:hover{
+    color: rgba(0, 195, 255);
+}
+
+.br-on{
+    display: inline;
+}
+.br-off{
+    display: none;
+}
+
+.clear{
+    /* floatを解除 */
+    clear: both;
+  }
+
+ 
+
+
+/* スライドショーの画像クリック表示・非表示 */
+.slider{
+    margin: 0px auto;
+    padding: 10px;
+    height: 150px;
+    width: 850px;
+}
+.slider li{
+    margin:initial;
+    text-decoration: none;
+    display: inline-block;
+}
+.slider img{
+    margin: auto;
+    width: 150px;
+    height: 100px;
+    cursor : pointer;
+}
+/*slick setting*/
+.photolist-h1{
+    font-size: 28px;
+    padding:10px;
+    text-align: center;
+}
+.slick-container{
+    padding:50px 0px 100px 0px;
+}
+
+/* 写真スライドショーの画像クリック表示・非表示 */
+#graydisplay1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%!important;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    z-index:1001;
+    overflow: hidden;
+}
+#graydisplay1 img {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin: auto;
+    width: 1000px;
+    height: auto;
+    z-index:1001;
+}
+#graydisplay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%!important;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    z-index: 1002;
+}
+#graydisplay2 img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 600px;
+    z-index: 1002;
+}
+    
+
+@media screen and (max-width:1000px){
+    .h-set{
+        background-size:100%;
+    }
+    
+    /*画像拡大の調整*/
+    #graydisplay1 img {
+        width: 100%;
+        height: auto;
+    }
+    #graydisplay2 img {
+        width: 100%;
+        height: auto;
+    }       
+}
+/* レスポンシブ:725px */
+@media screen and (max-width:725px){
+
+    .main{
+        width:auto;
+    }
+    .h-set{
+        min-width:initial;
+    }
+    .footer{
+        min-width: initial;
+    }
+    .br-on{
+        display: none;
+    }
+    .br-off{
+        display: inline;
+    }
+    
+
+    .floor{
+        height:2750px;
+        padding-bottom:100px;
+    }
+    .f-title{
+        padding:30px;
+    }
+    .f-imgList{
+       max-width: initial;
+       width: 100%;
+       padding-bottom: 30px;
+    }
+    .f-imgflame{
+        overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+        width:100%;
+        height:100%;
+        vertical-align: top;
+        margin:auto;
+    }
+    .f-img{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .f-imglist ul{
+        width:100%;
+    }
+    .f-imglist li{
+        overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        width:48%;
+        height: auto;  
+        vertical-align: top;
+        margin: 0 1px;
+    }
+    .f-imginner{
+        top:auto;
+        bottom:0px;
+        left: 0px;
+        margin:0;
+        width: 100%;
+        height: 50px;
+    }
+    .f-imginner p{
+        
+        line-height: initial;
+        font-size:20px;
+        text-shadow:0px 0px 6px rgba(255,255,205,1.0);
+        letter-spacing: 0.1em;
+        font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+
+    .f-floorplan{
+        padding:100px 0px;
+        text-align: center;
+        margin: auto;
+    }
+    .f-imgFloorplan{
+        width: 100%;
+        height: 100%;
+    }
+    .f-text{
+        width:90%;
+        padding:3%;
+        margin: 2%;
+        margin: auto;
+        border: 1px solid rgb(66, 66, 66);
+        box-shadow: 0px 0px 8px rgba(66, 66, 66, 0.4);
+    }    
+
+
+    .h-nav ul{
+        display: none;
+    }
+    
+    
+
+    /*【 ハンバーガーメニュー 】トグルボタンのスタイルを指定*/
+    .Toggle {
+        display: block;
+        position: fixed;    /* bodyに対しての絶対位置指定 */
+        right: 25px;
+        top: 12px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 101; /*h-navが100な為その上に表示*/
+    }
+    
+    .Toggle span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px white;
+        -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
+        -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
+        transition: .35s ease-in-out;			/*変化の速度を指定*/
+        left: 6px;
+    }
+    
+    .Toggle span:nth-child(1) {
+        top: 9px;
+    }
+    
+    .Toggle span:nth-child(2) {
+        top: 18px;
+    }
+    
+    .Toggle span:nth-child(3) {
+        top: 27px;
+    }
+}
+@media screen and (max-width:400px){
+    .h-set{
+        background-image: url("../img/header2.jpg");
+        background-size: 100%;
+    }    
+}
+@media screen and (min-width:725px){
+    /*ハンバーガーメニュー 画面広げたらhbのメニュー部分非表示*/
+    nav.NavMenu{
+        display: none;
+    }
+}
+
+/* レスポンシブ:600px */
+@media screen and (max-width:600px){
+    .floor{
+        height: 2300px;
+    }
+}
+/* レスポンシブ:450px */
+@media screen and (max-width:450px){
+    .floor{
+        height: 2050px;
+    }
+    .f-imginner{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .f-imginner p{
+        display: inline;
+    }
+}
+/*slick li非表示*/
+@media screen and (max-width:300px){
+    .slick-container{
+        display: none;
+    }
+}
+
+/*ハンバーガーメニュー*/
+/*ナビメニューのスタイルを指定*/
+nav.NavMenu{
+    position: fixed; /*表示位置を固定*/
+    z-index: 101; /*重ね順を変更*/
+    top: 80px; /*表示位置を指定*/
+    left: 0; /*表示位置を指定*/
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%; /*全幅表示*/
+    height: 400px;
+    transform: translateY(-200%); /*ナビを上に隠す*/
+    transition: all 0.3s; /*アニメーションの時間を指定*/
+}
+    
+nav.NavMenu ul{
+    width: 100%;
+    list-style: none;
+}
+    
+.NavMenu .hb-nav-l{
+    width:50%;
+    height:50px;
+}
+
+.NavMenu .hb-nav-l a{
+    font-size: 13px;
+    color:white;
+    width: 100%;
+    height: 100%;
+    padding:0 20px;
+    line-height: 50px;
+    display: block; /*クリックできる領域を広げる*/
+    text-decoration: none;
+}
+.NavMenu .hb-nav-l a:hover{
+    background-color: rgba(0, 195, 255, 0.4)
+}
+
+
+/*トグルボタンが押されたときに付与するクラス*/
+nav.NavMenu.active{
+    transform: translateY(0%);
+}
+
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(2),
+.Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

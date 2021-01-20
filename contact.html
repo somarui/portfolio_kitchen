@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ShareKitchenBands |【簡単に料理を出店できる】滋賀のシェアキッチン |コンタクト</title>
+   <link rel="shortcut icon" type="image/x-icon" href="img/favicon1-1.png" alt="シェアキッチン 滋賀 出店 料理 バンズ">
+   <link rel="stylesheet" href="css/contact.css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet"> <!--h1フォント読み込み-->
+   <!-- jQueryのライブラリの読み込み -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+
+      <header class="header">
+         <div class="h-title">
+             <h1 class="h-title-h1">CONTACT</h1>
+          </div>
+          <div class="h-set">
+             <div class="bg-black">
+                <div class="h-nav" id="h-nav">
+                   <a href="index.html"><img src="img/logo1.png" id="h-navLogo" alt="シェアキッチン 滋賀 出店 料理 バンズ"></a>
+                   <ul>
+                      <li class="h-nav-l"><a href="concept.html">Concept</a></li>
+                      <li class="h-nav-l"><a href="success.html">Success</a></li>
+                      <li class="h-nav-l"><a href="floor.html">Floor</a></li>
+                      <li class="h-nav-l"><a href="price.html">Price</a></li>
+                      <li class="h-nav-l"><a href="access.html">Access</a></li>
+                      <li class="h-nav-l"><a href="contact.html">Contact</a></li>             
+                   </ul>
+                </div>
+             </div> 
+          </div>        
+ 
+         <!-- ハンバーガーメニュー -->
+         <!-- ナビ部分 -->
+         <nav class="NavMenu">
+            　<ul>
+               <li class="hb-nav-l"><a href="concept.html">Concept　~コンセプト~</a></li>
+               <li class="hb-nav-l"><a href="success.html">Success　出店事例</a></li>
+               <li class="hb-nav-l"><a href="floor.html">Floor　フロア紹介</a></li>
+               <li class="hb-nav-l"><a href="price.html">Price　料金一覧</a></li>
+               <li class="hb-nav-l"><a href="access.html">Access　アクセス</a></li>
+               <li class="hb-nav-l"><a href="contact.html">Contact　お問い合わせ</a></li>             
+            　</ul>
+         </nav>
+         <!-- ハンバーガー部分 --> 
+            <div class="Toggle">
+            　　<span></span>
+            　　<span></span>
+            　　<span></span>
+            </div>
+
+      </header>
+
+
+   <div class="main">
+
+      <div class="contact" id="contact">
+
+         <div class="con-sec">
+            <ul class="con-sec-ul">
+               <li class="con-sec-li"><span class="txt-color1">料理を振舞うことが好き</span>なのに、自前の出店は難しそう・・・</li>
+               <li class="con-sec-li">自分のお店を出す事は不安だ・・・<span class="txt-color1">でも興味がある</span>、事前に試してみたい...</li>
+               <li class="con-sec-li">シェアキッチンって<span class="txt-color1">どんな事が出来る</span>のだろう。保健所の許可はいるのかな...</li>
+            </ul>
+            <p class="con-sec-p1">など、「<span class="txt-color2"><a href="https://form.run/@sharekitchenbands">無料相談</a></span>」では何でもお答えしますので、下記フォームよりご気軽にご連絡ください。</p>
+         </div>
+
+         <div class="con-form" id="con-form">
+            <!--FormRun埋め込み-->
+            <script src="https://sdk.form.run/js/v2/embed.js"></script>
+            <div
+              class="formrun-embed"
+              data-formrun-form="@aumtat-1602764507"
+              data-formrun-redirect="true">
+            </div>
+                          
+         </div>
+
+         <div class="con-sec">
+            <p class="con-sec-p2">作る人、食べる人、ともに幸せになれる場を提供できることを望んでおります。</p>
+         </div>
+
+      </div>
+   </div>
+
+   <footer class="footer">
+      <div class="fo-title">
+         Copyright&copy; <a href="#">ShareKitchenBands</a> All Rights Reserved.
+      </div>
+   </footer>
+
+         
+</div>
+</body>
+
+
+
+
+<script>
+   function changeColor() {
+var timing = 0; //　変化するタイミングを微調整する
+
+var scrollY = window.pageYOffset;
+var body = document.body;
+
+var trigger1 = document.getElementById('contact');　//IDがcontact→変数trigger1
+var trigger2 = document.getElementById('h-nav');　//IDがhb-navform→変数trigger2
+
+var trigger1Y = trigger1.getBoundingClientRect().top; // ウィンドウ上からの要素の位置
+
+
+// contactの位置がスクロールで0以下になった時、trigger2の背景オレンジ
+// contactの位置がスクロールで0以上の時、trigger2の背景ブラック
+if(trigger1Y - timing < 110) {
+trigger2.style.backgroundColor = "rgba(0,0,0,0.8)";
+ trigger2.style.shadowColor = 'gray'; 
+ trigger2.style.shadowOffsetX = 5;
+ trigger2.style.shadowOffsetY = 5;
+ 
+} else if(trigger1Y - timing > 0){
+ trigger2.style.backgroundColor = 'transparent';
+}
+}
+
+window.addEventListener('scroll', changeColor);
+</script>
+
+
+
+<script type="text/javascript"> //ハンバーガーメニュー
+$(function() {
+　$('.Toggle').click(function() {
+　　$(this).toggleClass('active');
+
+　if ($(this).hasClass('active')) {
+　　$('.NavMenu').addClass('active');　 //トグルボタンが押された時クラスを付与
+　} else {
+　　$('.NavMenu').removeClass('active'); //クラスを外す
+　}
+　});
+});
+</script>
+
+</html>
+

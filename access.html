@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ShareKitchenBands |【簡単に料理を出店できる】滋賀のシェアキッチン |アクセス</title>
+   <link rel="shortcut icon" type="image/x-icon" href="img/favicon1-1.png" alt="シェアキッチン 滋賀 出店 料理 バンズ">
+   <link rel="stylesheet" href="css/access.css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet"> <!--h1フォント読み込み-->
+   <script src="https://sdk.form.run/js/v2/embed.js"></script>
+   <!-- jQueryのライブラリの読み込み -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>
+   <div class="container">
+
+      <header class="header">
+         <div class="h-title">
+             <h1 class="h-title-h1">ACCESS</h1>
+          </div>
+          <div class="h-set">
+             <div class="bg-black">
+                <div class="h-nav" id="h-nav">
+                   <a href="index.html"><img src="img/logo1.png" id="h-navLogo" alt="シェアキッチン 滋賀 出店 料理 バンズ"></a>
+                   <ul>
+                      <li class="h-nav-l"><a href="concept.html">Concept</a></li>
+                      <li class="h-nav-l"><a href="success.html">Success</a></li>
+                      <li class="h-nav-l"><a href="floor.html">Floor</a></li>
+                      <li class="h-nav-l"><a href="price.html">Price</a></li>
+                      <li class="h-nav-l"><a href="access.html">Access</a></li>
+                      <li class="h-nav-l"><a href="contact.html">Contact</a></li>             
+                   </ul>
+                </div>
+             </div> 
+          </div>        
+ 
+         <!-- ハンバーガーメニュー -->
+         <!-- ナビ部分 -->
+         <nav class="NavMenu">
+            　<ul>
+               <li class="hb-nav-l"><a href="concept.html">Concept　~コンセプト~</a></li>
+               <li class="hb-nav-l"><a href="success.html">Success　出店事例</a></li>
+               <li class="hb-nav-l"><a href="floor.html">Floor　フロア紹介</a></li>
+               <li class="hb-nav-l"><a href="price.html">Price　料金一覧</a></li>
+               <li class="hb-nav-l"><a href="access.html">Access　アクセス</a></li>
+               <li class="hb-nav-l"><a href="contact.html">Contact　お問い合わせ</a></li>             
+            　</ul>
+         </nav>
+         <!-- ハンバーガー部分 --> 
+            <div class="Toggle">
+            　　<span></span>
+            　　<span></span>
+            　　<span></span>
+            </div>
+
+      </header>
+
+
+      <div class="main">
+
+         <div class="access" id="access">
+            <div class="a-text">
+               <section class="a-sec">
+               <p class="a-p0">Share Kitchen Bands</p>
+               <p class="a-p1">住所</p>
+               <p>〒520-2143</p>
+               <p>滋賀県大津市菅野浦23-22-101</p>
+               <p>東海道本線「瀬田駅」or「石山駅」下車　徒歩20分</p>
+               <p class="a-p2">代表メールアドレス　aumtat@gmail.com</p>
+            </section>
+            </div>
+            <div class="a-tizu">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13074.351792034615!2d135.91132325403404!3d34.991984566344854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600172b0497a602d%3A0x3712635b78cd087a!2z44CSNTIwLTIxNDMg5ruL6LOA55yM5aSn5rSl5biC6JCx6YeO5rWm77yS77yT4oiS77yS77yS!5e0!3m2!1sja!2sjp!4v1597577887463!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="a-tizu1"></iframe>
+            </div>   
+         <div class="clear"></div>
+         </div>
+
+      </div>
+
+            
+      <footer class="footer">
+         <div class="fo-title">
+            Copyright&copy; <a href="#">ShareKitchenBands</a> All Rights Reserved.
+         </div>
+      </footer>
+   
+      
+
+   </div>
+</body>
+
+
+
+
+<script>
+   function changeColor() {
+var timing = 0; //　変化するタイミングを微調整する
+
+var scrollY = window.pageYOffset;
+var body = document.body;
+
+var trigger1 = document.getElementById('access');　//IDがcontact→変数trigger1
+var trigger2 = document.getElementById('h-nav');　//IDがhb-navform→変数trigger2
+
+var trigger1Y = trigger1.getBoundingClientRect().top; // ウィンドウ上からの要素の位置
+
+
+// contactの位置がスクロールで0以下になった時、trigger2の背景オレンジ
+// contactの位置がスクロールで0以上の時、trigger2の背景ブラック
+if(trigger1Y - timing < 110) {
+ trigger2.style.backgroundColor = "rgba(0,0,0,0.8)";
+ trigger2.style.shadowColor = 'gray'; 
+ trigger2.style.shadowOffsetX = 5;
+ trigger2.style.shadowOffsetY = 5;
+ 
+} else if(trigger1Y - timing > 0){
+ trigger2.style.backgroundColor = 'transparent';
+}
+}
+
+window.addEventListener('scroll', changeColor);
+</script>
+
+
+
+<script type="text/javascript"> //ハンバーガーメニュー
+$(function() {
+　$('.Toggle').click(function() {
+　　$(this).toggleClass('active');
+
+　if ($(this).hasClass('active')) {
+　　$('.NavMenu').addClass('active');　 //トグルボタンが押された時クラスを付与
+　} else {
+　　$('.NavMenu').removeClass('active'); //クラスを外す
+　}
+　});
+});
+</script>
+
+</html>
+
